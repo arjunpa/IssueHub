@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="KGk-i7-Jjw" customClass="DetailIssueTableViewCell" customModule="IssueHub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="148.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="990" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdo-JZ-1WY">
+                        <rect key="frame" x="8" y="8" width="298" height="19.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWo-js-dXN">
+                        <rect key="frame" x="8" y="101" width="304" height="4"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="MS9-mD-CUR"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D53-Rt-cKH">
+                        <rect key="frame" x="8" y="120" width="46.5" height="12"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="990" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EE3-8P-cII">
+                        <rect key="frame" x="264" y="120" width="42" height="12"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium . " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QU0-Gq-MAo">
+                        <rect key="frame" x="8" y="35" width="304" height="58"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="D53-Rt-cKH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="1Yc-6n-pE0"/>
+                    <constraint firstItem="vWo-js-dXN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="2Ye-As-jvs"/>
+                    <constraint firstAttribute="trailing" secondItem="EE3-8P-cII" secondAttribute="trailing" constant="14" id="5T3-uK-HQ8"/>
+                    <constraint firstItem="D53-Rt-cKH" firstAttribute="centerY" secondItem="EE3-8P-cII" secondAttribute="centerY" constant="1.5" id="6Ff-Cp-V9D"/>
+                    <constraint firstItem="D53-Rt-cKH" firstAttribute="centerY" secondItem="EE3-8P-cII" secondAttribute="centerY" id="8BG-tt-Nl0"/>
+                    <constraint firstItem="QU0-Gq-MAo" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="AUx-Iv-jwA"/>
+                    <constraint firstItem="vWo-js-dXN" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Eqx-hm-IUc"/>
+                    <constraint firstItem="Gdo-JZ-1WY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="KLM-8S-69q"/>
+                    <constraint firstItem="QU0-Gq-MAo" firstAttribute="top" secondItem="Gdo-JZ-1WY" secondAttribute="bottom" constant="8" id="KM8-jc-cp0"/>
+                    <constraint firstItem="D53-Rt-cKH" firstAttribute="top" secondItem="vWo-js-dXN" secondAttribute="bottom" constant="15" id="Tbx-Im-2RL"/>
+                    <constraint firstAttribute="bottom" secondItem="EE3-8P-cII" secondAttribute="bottom" constant="16.5" id="Vuo-VI-MtX"/>
+                    <constraint firstItem="Gdo-JZ-1WY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="akN-ow-Adl"/>
+                    <constraint firstItem="vWo-js-dXN" firstAttribute="top" secondItem="QU0-Gq-MAo" secondAttribute="bottom" constant="8" id="b7J-FM-qCJ"/>
+                    <constraint firstItem="QU0-Gq-MAo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="bjJ-k5-bbU"/>
+                    <constraint firstAttribute="bottom" secondItem="D53-Rt-cKH" secondAttribute="bottom" constant="16.5" id="d4l-B8-ysn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Gdo-JZ-1WY" secondAttribute="trailing" constant="6" id="dxa-n9-K1H"/>
+                    <constraint firstItem="EE3-8P-cII" firstAttribute="leading" secondItem="D53-Rt-cKH" secondAttribute="trailing" priority="900" constant="209.5" id="eAa-1K-jqU"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="6Ff-Cp-V9D"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="author" destination="D53-Rt-cKH" id="EB9-V4-8qD"/>
+                <outlet property="dateTime" destination="EE3-8P-cII" id="Sio-R6-KRF"/>
+                <outlet property="issueBody" destination="QU0-Gq-MAo" id="sT8-Pt-h67"/>
+                <outlet property="issueTitle" destination="Gdo-JZ-1WY" id="cmz-jz-CCl"/>
+            </connections>
+            <point key="canvasLocation" x="272" y="225.5"/>
+        </tableViewCell>
+    </objects>
+</document>

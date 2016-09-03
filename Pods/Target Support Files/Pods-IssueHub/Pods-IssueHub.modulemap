@@ -1,0 +1,6 @@
+framework module Pods_IssueHub {
+  umbrella header "Pods-IssueHub-umbrella.h"
+
+  export *
+  module * { export * }
+}
