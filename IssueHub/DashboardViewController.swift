@@ -18,6 +18,8 @@ class DashboardViewController: BaseViewController {
         self.setupTopLayoutGuide()
         self.doRegistrations()
         
+        self.table_view.tableFooterView = UIView.init(frame: CGRectZero)
+        
         // Do any additional setup after loading the view.
     }
     

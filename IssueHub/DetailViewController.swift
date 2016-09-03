@@ -15,6 +15,7 @@ class DetailViewController: BaseViewController {
     var comments:[Comment] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.table_view.tableFooterView = UIView.init(frame: CGRectZero)
         self.setupTopLayoutGuide()
         self.doRegistrations()
         self.loadCommentLoader()
